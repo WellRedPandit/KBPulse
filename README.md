@@ -29,6 +29,18 @@ $ ./kbpulse
 $ ./kbpulse Yawn
 ```
 
+To simply turn the keyboard backlight off, pass `--off`. KBPulse fades the backlight to zero and exits immediately instead of starting an animation loop.
+
+```sh
+$ ./kbpulse --off
+```
+
+Likewise, `--on` fades the backlight to full brightness and exits immediately.
+
+```sh
+$ ./kbpulse --on
+```
+
 ## Configuration
 Configuration files (.json) are stored in `~/Documents/KBPulse`. (This location will likely change in the future.) Yawn.json is the default theme. Copy it to make your own.
 The array of animations is not limited to two animations. You can add as many as you want!
